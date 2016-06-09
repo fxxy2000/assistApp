@@ -1,5 +1,7 @@
 package com.wilson.assisapi;
 
+import android.app.assist.AssistContent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -97,5 +99,20 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onProvideAssistData(Bundle data) {
+        super.onProvideAssistData(data);
+    }
+
+    @Override
+    public Uri onProvideReferrer() {
+        return super.onProvideReferrer();
+    }
+
+    @Override
+    public void onProvideAssistContent(AssistContent outContent) {
+        super.onProvideAssistContent(outContent);
     }
 }
