@@ -31,11 +31,6 @@
                 android:name="com.android.systemui.action_assist_icon"
                 android:resource="@android:drawable/sym_def_app_icon" />
         </activity>
-        <receiver android:name=".HomeButtonReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS" />
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>
